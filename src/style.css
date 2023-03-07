@@ -1,0 +1,75 @@
+body {
+  /* min-width: 1024px; */
+  background-color: #1f4693;
+}
+
+#app {
+  height: 100%;
+  font-size: 16px;
+  color: #fff;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ovh {
+  overflow: hidden;
+  flex: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ant-badge-status-dot {
+  width: 12px;
+  height: 12px;
+}
+
+.ant-badge-status-text {
+  margin-left: 24px;
+  color: #fff;
+}
+
+.anticon {
+  font-size: 26px;
+  margin-right: 10px;
+}
+
+.ant-divider-horizontal {
+  margin: 8px 0;
+  background-color: #1f4693;
+}
+
+.ant-tag {
+  margin: 0;
+  /* padding: 2px 16px; */
+}
+
+.ant-progress {
+  display: block;
+}
+
+.ant-progress-inner {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.ant-progress-text,
+.ant-progress-circle .ant-progress-text {
+  color: #fff;
+}
+
+/* @media screen and (width < 1024px) {
+  body {
+    transform-origin: 0 0;
+    transform: rotateZ(90deg) translateY(-100%);
+  }
+} */
