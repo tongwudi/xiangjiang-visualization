@@ -41,7 +41,7 @@ ul {
 }
 
 .anticon {
-  font-size: 26px;
+  font-size: 24px;
   margin-right: 10px;
 }
 
@@ -52,18 +52,19 @@ ul {
 
 .ant-tag {
   margin: 0;
-  /* padding: 2px 16px; */
 }
 
 .ant-progress {
   display: block;
+  font-size: 14px !important;
+  line-height: 1;
 }
 
 .ant-progress-inner {
   background-color: rgba(255, 255, 255, 0.6);
 }
-.ant-progress-text,
-.ant-progress-circle .ant-progress-text {
+
+.ant-progress-text {
   color: #fff;
 }
 
