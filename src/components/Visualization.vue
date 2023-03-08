@@ -45,11 +45,11 @@
           <a-divider />
           <ul class="statistic-box">
             <li>
-              <span class="color-txt">月新增份数</span>
+              <span class="color-txt">当月新增份数</span>
               <span class="bold">{{ info.zyq_dyxzfs || 0 }}</span>
             </li>
             <li>
-              <span class="color-txt">月新增金额</span>
+              <span class="color-txt">当月新增金额</span>
               <span class="bold">{{ info.zyq_dyxzje || 0 }}</span>
             </li>
           </ul>
@@ -88,7 +88,7 @@
             </ul>
           </a-row>
           <a-divider />
-          <div class="statistic-box">年累计份数转化率</div>
+          <div class="statistic-box undertint">年累计份数转化率</div>
           <a-progress size="small" :percent="info.zyq_zh_nljfszhl" />
         </div>
 
@@ -113,11 +113,11 @@
           <a-divider />
           <ul class="statistic-box">
             <li>
-              <span class="color-txt">月新增份数</span>
+              <span class="color-txt">当月新增份数</span>
               <span class="bold">{{ info.yzq_zdxm_dyxzfs || 0 }}</span>
             </li>
             <li>
-              <span class="color-txt">月新增金额</span>
+              <span class="color-txt">当月新增金额</span>
               <span class="bold">{{ info.yzq_zdxm_dyxzje || 0 }}</span>
             </li>
           </ul>
@@ -147,11 +147,11 @@
           <a-divider />
           <ul class="statistic-box">
             <li>
-              <span class="color-txt">月新增份数</span>
+              <span class="color-txt">当月新增份数</span>
               <span class="bold">{{ info.lx_dyxzfs || 0 }}</span>
             </li>
             <li>
-              <span class="color-txt">月新增金额</span>
+              <span class="color-txt">当月新增金额</span>
               <span class="bold">{{ info.lx_dyxzje || 0 }}</span>
             </li>
           </ul>
@@ -192,8 +192,11 @@
               <li class="txt ellipsis">累计金额</li>
             </ul>
           </a-row>
+        </div>
+
+        <div class="statistic-card">
           <a-row class="statistic-title">
-            <a-tag color="#16a6bc">立项后关闭</a-tag>
+            <a-tag color="#cd201f">立项后关闭</a-tag>
           </a-row>
           <a-row class="statistic-item" align="middle">
             <file-outlined style="color: #0d4fd6" />
@@ -235,11 +238,11 @@
           <a-divider />
           <ul class="statistic-box">
             <li>
-              <span class="color-txt">月新增份数</span>
+              <span class="color-txt">当月新增份数</span>
               <span class="bold">{{ info.tb_dyxzfs || 0 }}</span>
             </li>
             <li>
-              <span class="color-txt">月新增金额</span>
+              <span class="color-txt">当月新增金额</span>
               <span class="bold">{{ info.tb_dyxzje || 0 }}</span>
             </li>
           </ul>
@@ -267,14 +270,14 @@
             <file-outlined style="color: #0d4fd6" />
             <ul class="ovh">
               <li class="num ellipsis">{{ info.tb_bqgj_dyfs || 0 }}</li>
-              <li class="txt ellipsis">月份数</li>
+              <li class="txt ellipsis">当月份数</li>
             </ul>
           </a-row>
           <a-row class="statistic-item" align="middle">
             <pay-circle-outlined style="color: green" />
             <ul class="ovh">
               <li class="num ellipsis">{{ info.tb_bqgj_dyje || 0 }}</li>
-              <li class="txt ellipsis">月金额</li>
+              <li class="txt ellipsis">当月金额</li>
             </ul>
           </a-row>
           <a-row class="statistic-item" align="middle">
@@ -284,20 +287,23 @@
               <li class="txt ellipsis">年累计未通过份数</li>
             </ul>
           </a-row>
+        </div>
+
+        <div class="statistic-card">
           <a-row class="statistic-title">
             <a-tag color="#cd201f">中标率</a-tag>
           </a-row>
-          <div class="statistic-box">月份数中标率</div>
+          <div class="statistic-box undertint">月份数中标率</div>
           <a-progress size="small" :percent="info.tb_zbl_dyfszbl" />
-          <div class="statistic-box">月金额中标率</div>
+          <div class="statistic-box undertint">月金额中标率</div>
           <a-progress size="small" :percent="info.tb_zbl_dyjezbl" />
-          <div class="statistic-box">累计份数中标率</div>
+          <div class="statistic-box undertint">累计份数中标率</div>
           <a-progress
             size="small"
             :percent="info.tb_zbl_ljfszbl"
             :success="{ percent: info.tb_zbl_ljfszbl }"
           />
-          <div class="statistic-box">累计金额中标率</div>
+          <div class="statistic-box undertint">累计金额中标率</div>
           <a-progress
             size="small"
             :percent="info.tb_zbl_ljjezbl"
@@ -329,11 +335,11 @@
           <a-divider />
           <ul class="statistic-box">
             <li>
-              <span class="color-txt">月新增份数</span>
+              <span class="color-txt">当月新增份数</span>
               <span class="bold">{{ info.dd_dyxzfs || 0 }}</span>
             </li>
             <li>
-              <span class="color-txt">月新增金额</span>
+              <span class="color-txt">当月新增金额</span>
               <span class="bold">{{ info.dd_dyxzje || 0 }}</span>
             </li>
           </ul>
@@ -360,11 +366,11 @@
           <a-divider />
           <ul class="statistic-box">
             <li>
-              <span class="color-txt">月新增份数</span>
+              <span class="color-txt">当月新增份数</span>
               <span class="bold">{{ info.dd_yjf_dyxzfs || 0 }}</span>
             </li>
             <li>
-              <span class="color-txt">月新增金额</span>
+              <span class="color-txt">当月新增金额</span>
               <span class="bold">{{ info.dd_yjf_dyxzje || 0 }}</span>
             </li>
           </ul>
@@ -378,14 +384,14 @@
             <file-outlined style="color: #0d4fd6" />
             <ul class="ovh">
               <li class="num ellipsis">{{ info.dd_yszk_dyfs || 0 }}</li>
-              <li class="txt ellipsis">月份数</li>
+              <li class="txt ellipsis">当月份数</li>
             </ul>
           </a-row>
           <a-row class="statistic-item" align="middle">
             <pay-circle-outlined style="color: green" />
             <ul class="ovh">
               <li class="num ellipsis">{{ info.dd_yszk_dyje || 0 }}</li>
-              <li class="txt ellipsis">月金额</li>
+              <li class="txt ellipsis">当月金额</li>
             </ul>
           </a-row>
           <a-divider />
@@ -425,11 +431,11 @@
           <a-divider />
           <ul class="statistic-box">
             <li>
-              <span class="color-txt">月新增份数</span>
+              <span class="color-txt">当月新增份数</span>
               <span class="bold">{{ info.hk_dyxzfs || 0 }}</span>
             </li>
             <li>
-              <span class="color-txt">月新增金额</span>
+              <span class="color-txt">当月新增金额</span>
               <span class="bold">{{ info.hk_dyxzje || 0 }}</span>
             </li>
           </ul>
@@ -456,11 +462,11 @@
           <a-divider />
           <ul class="statistic-box">
             <li>
-              <span class="color-txt">月新增份数</span>
+              <span class="color-txt">当月新增份数</span>
               <span class="bold">{{ info.hk_hk_dyxzfs || 0 }}</span>
             </li>
             <li>
-              <span class="color-txt">月新增金额</span>
+              <span class="color-txt">当月新增金额</span>
               <span class="bold">{{ info.hk_hk_dyxzje || 0 }}</span>
             </li>
           </ul>
@@ -487,11 +493,11 @@
           <a-divider />
           <ul class="statistic-box">
             <li>
-              <span class="color-txt">月新增份数</span>
+              <span class="color-txt">当月新增份数</span>
               <span class="bold">{{ info.hk_yq_dyxzfs || 0 }}</span>
             </li>
             <li>
-              <span class="color-txt">月新增金额</span>
+              <span class="color-txt">当月新增金额</span>
               <span class="bold">{{ info.hk_yq_dyxzje || 0 }}</span>
             </li>
           </ul>
@@ -521,11 +527,11 @@
           <a-divider />
           <ul class="statistic-box">
             <li>
-              <span class="color-txt">月新增份数</span>
+              <span class="color-txt">当月新增份数</span>
               <span class="bold">{{ info.kc_dyxzfs || 0 }}</span>
             </li>
             <li>
-              <span class="color-txt">月新增金额</span>
+              <span class="color-txt">当月新增金额</span>
               <span class="bold">{{ info.kc_dyxzje || 0 }}</span>
             </li>
           </ul>
@@ -552,11 +558,11 @@
           <a-divider />
           <ul class="statistic-box">
             <li>
-              <span class="color-txt">月新增份数</span>
+              <span class="color-txt">当月新增份数</span>
               <span class="bold">{{ info.kc_dz_dyxzfs || 0 }}</span>
             </li>
             <li>
-              <span class="color-txt">月新增金额</span>
+              <span class="color-txt">当月新增金额</span>
               <span class="bold">{{ info.kc_dz_dyxzje || 0 }}</span>
             </li>
           </ul>
@@ -579,14 +585,23 @@ onMounted(() => {
 
 const getData = async () => {
   try {
-    const res = await axios.get('/api/xjkjReport/getData?pwd=xjkj20230224')
-    console.log(res);
+    const res = await axios.get(
+      '/kingdeewebapi/api/xjkjReport/getData?pwd=xjkj20230224'
+    )
     const data = JSON.parse(res.data)
     data.zyq_zh_nljfszhl = parseInt(data.zyq_zh_nljfszhl * 100)
     data.tb_zbl_dyfszbl = parseInt(data.tb_zbl_dyfszbl * 100)
     data.tb_zbl_dyjezbl = parseInt(data.tb_zbl_dyjezbl * 100)
     data.tb_zbl_ljfszbl = parseInt(data.tb_zbl_ljfszbl * 100)
     data.tb_zbl_ljjezbl = parseInt(data.tb_zbl_ljjezbl * 100)
+    for (let key in data) {
+      const len = parseInt(data[key]).toFixed().length
+      if (len > 5 && len < 9) {
+        data[key] = parseInt(data[key] / 10000) + '万'
+      } else if (len >= 9) {
+        data[key] = (data[key] / 100000000).toFixed(2) + '亿'
+      }
+    }
     info.value = data
   } catch (err) {
     console.log(err)
@@ -643,22 +658,22 @@ const getData = async () => {
 }
 .statistic-item {
   .num {
+    font-size: 18px;
     font-weight: bold;
     line-height: 22px;
   }
   .txt {
     font-size: 12px;
-    line-height: 18px;
+    line-height: 16px;
     color: rgba(255, 255, 255, 0.6);
   }
   & + .statistic-item {
-    margin-top: 5px;
+    margin-top: 8px;
   }
 }
 .statistic-box {
   font-size: 14px;
   line-height: 20px;
-  color: rgba(255, 255, 255, 0.6);
   li {
     .color-txt {
       margin-right: 8px;
@@ -672,8 +687,12 @@ const getData = async () => {
 .statistic-title {
   margin-bottom: 8px;
 }
-.ant-progress + .statistic-box,
+
 .statistic-item + .statistic-title {
+  margin-top: 10px;
+}
+
+.ant-progress + .statistic-box {
   margin-top: 8px;
 }
 </style>

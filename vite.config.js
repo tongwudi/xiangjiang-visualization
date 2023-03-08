@@ -22,10 +22,10 @@ export default defineConfig({
     },
     server: {
         proxy: {
-            '/api': {
-                target: 'http://cloud.xjkjtech.com:5288/kingdeewebapi/api',
+            '/kingdeewebapi': {
+                target: 'http://cloud.xjkjtech.com:5288/kingdeewebapi',
                 changeOrigin: true,
-                rewrite: (path) => path.replace(/^\/api/, '')
+                rewrite: (path) => path.replace(/^\/kingdeewebapi/, '')
             }
         }
     }

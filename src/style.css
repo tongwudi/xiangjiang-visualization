@@ -24,6 +24,10 @@ ul {
   font-weight: bold;
 }
 
+.undertint {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -41,12 +45,12 @@ ul {
 }
 
 .anticon {
-  font-size: 24px;
-  margin-right: 10px;
+  font-size: 22px;
+  margin-right: 8px;
 }
 
 .ant-divider-horizontal {
-  margin: 8px 0;
+  margin: 10px 0;
   background-color: #1f4693;
 }
 
